@@ -3,4 +3,3 @@ numeroFinal = int(input("Dime hasta que número quieres que te haga la tabla de 
 
 for i in range(0, numeroFinal):
     print(numeroInicio, " x ", i, " = ", numeroInicio*i)
-print()
