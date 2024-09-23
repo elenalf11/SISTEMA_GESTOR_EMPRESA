@@ -1,0 +1,33 @@
+mi_lista = [1, 2, "hola", True]
+mi_lista.append(3) #Agregar un elemento al final
+print(mi_lista)
+mi_lista.remove(2) #Eliminar un elemento
+print(mi_lista)
+mi_lista.pop() #Eliminar el último elemento
+print(mi_lista)
+print("Mi lista tiene una longitud de ", len(mi_lista)) #Obtener la longitud de la lista
+mi_lista.extend([5, 6]) #Agregar una lista a otra 
+print(mi_lista)
+mi_lista.insert(1, "pepe") #Insertar un elemento en una posición
+print(mi_lista)
+print("El elemento 2 aparece en la posición: ", mi_lista.index(1)) #Obtener la posición de un elemento
+print("El elemento 5 aparecen en la lista ", mi_lista.count(5), "veces") #Obtener el número de veces que aparece un elemento
+lista_desordenada = [5, 3, 1, 9, 4]
+print("La lista: ", lista_desordenada, " así esta ordenada de menos a mayor: ", sorted(lista_desordenada)) #Ordenar una lista de menor a mayor
+print("La lista: ", lista_desordenada, " así esta ordenada de mayor a menor: ", sorted(lista_desordenada, reverse=True)) #Ordenar una lista de mayor a menor
+lista_desordenada.clear() #Limpiar una lista
+print(lista_desordenada)
+nueva_lista = mi_lista.copy() #Copiar una lista
+print(nueva_lista)
+lista = []  # Lista vacía para almacenar los datos
+
+while True:
+    entrada = input("Introduce un número o palabra (escribe 'fin' para terminar): ")
+   
+    if entrada.lower() == "fin":  # Si el usuario escribe 'fin', se termina el bucle
+        break
+   
+    lista.append(entrada)  # Agrega la entrada a la lista
+
+print("Los elementos en la lista son:", lista)
+
