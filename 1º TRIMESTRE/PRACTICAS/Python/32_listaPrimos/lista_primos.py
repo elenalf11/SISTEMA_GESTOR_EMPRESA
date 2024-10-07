@@ -8,7 +8,7 @@ for i in range(2, numero + 1):
         if i % j == 0:
             es_primo = False
             break
-    if es_primo:
+    if (es_primo):
         primos.append(i)
 
 print("La lista de números primos es: ", primos)
