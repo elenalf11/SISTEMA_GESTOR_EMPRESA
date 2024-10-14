@@ -68,3 +68,23 @@ if "Python" in mi_lista:
     print("La palabra 'Python' está en la lista")
 mi_lista[3][0] = 100
 print(mi_lista[3][1])
+
+match dia:
+    case "Lunes":
+        print("Es el inicio de la semana")
+    case "Viernes":
+        print("Ya casi es fin de semana")
+    case "sábado | domingo":
+        print("Es fin de semana")
+    case _:
+        print("El resto de día")
+
+#Crear juego de las parejas
+#Modos de juego:
+#J1 vs J2 (ver partida)
+#J1 vs CPU (ver partida)
+#CPU vs CPU (ver partida o mostrar solo final)
+#Iconos del tablero con emojis(preferiblemente)
+#Tablero (preferiblemente) tamaño dinámico
+
+
