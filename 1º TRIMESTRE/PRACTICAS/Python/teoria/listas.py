@@ -69,6 +69,7 @@ if "Python" in mi_lista:
 mi_lista[3][0] = 100
 print(mi_lista[3][1])
 
+dia = "hola"
 match dia:
     case "Lunes":
         print("Es el inicio de la semana")
@@ -88,3 +89,97 @@ match dia:
 #Tablero (preferiblemente) tamaño dinámico
 
 
+
+nombre = "Elena"
+edad = 19
+print(f"Hola, {nombre}. Tienes {edad} años.")
+
+t = 12345, 54321, "hello!"
+print(t[0])
+print(t)
+
+tupla = (3, 4, 5)
+size = len(tupla)
+if(size == 1):
+    print(f"La tupla es: {tupla}")
+elif(size == 2):
+    suma = tupla[0] + tupla[1]
+    print(f"La suma de los dos números es: {tupla[0]} + {tupla[1]} = {suma}")
+elif(size == 3):
+    multiplicación = tupla[0] * tupla[1] * tupla[2]
+    print(f"La multiplicación entre {tupla[0]} x {tupla[1]} x {tupla[2]} = {multiplicación}")
+else:
+    print("La tupla tiene más de 3 elementos o no continene solo números")
+
+#Diccionario
+id = {"elena":19, "pepe": 1}
+
+diccionario_1 = {
+    "Nombre": "Elena",
+    "Edad": 25,
+}
+
+print(diccionario_1)
+
+calificaciones = {"Ana":90, "Juan":85, "Pedro":78}
+print(calificaciones["Ana"])
+
+diccionario_2 = ([
+    ("Nombre", "Elena"),
+    ("Edad", 19),
+])
+
+print(diccionario_2)
+
+diccionario_1["Nombre"] = "Pepe"
+print(diccionario_1)
+
+diccionario_1["Curso"] = "2ºDAM"
+print(diccionario_1)
+
+for i in diccionario_1:
+    print(i)
+
+for i in diccionario_1:
+    print(i, diccionario_1[i])
+
+for i, j in diccionario_1.items():
+    print(i, j)
+
+anidado1 = {"a": 1, "b": 2}
+anidado1.clear()
+print(anidado1)
+
+d = {"a": 1, "b": 2}
+print(d.get("a"))
+print(d.get("z", "No encontrado"))
+
+it = d.items()
+print(it)
+
+print(list(d))
+print(list(d)[0][0])
+
+k = d.keys()
+print(k)
+print(list(k))
+
+v = d.values()
+print(v)
+print(list(v))
+
+#d.pop("a")
+d.pop("z", "No encontrado")
+print(d)
+
+d.popitem()
+print(d)
+
+d1 = {"a":1, "b":2}
+d2 = {"a":0, "d":400}
+
+d1.update(d2)
+print(d1)
+
+print(list(d))
+print(sorted(d))
