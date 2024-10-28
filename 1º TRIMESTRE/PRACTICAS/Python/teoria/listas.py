@@ -183,3 +183,7 @@ print(d1)
 
 print(list(d))
 print(sorted(d))
+
+lista = ["A", "B", "C"]
+for indice, l in enumerate (lista):
+    print(indice, l)
