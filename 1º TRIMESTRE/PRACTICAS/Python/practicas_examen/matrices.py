@@ -15,12 +15,11 @@ def crearMatriz_2(filas, columnas):
     matriz = []
     parejas = (filas * columnas)//2
 
-    for i in range (0, parejas):
-        matriz.extend([numeros[i], numeros[i]])
-
+    for i in range(0, parejas):
+        matriz.extend((numeros[i], numeros[i]))
         matriz_descolocada = random.sample(matriz, len(matriz))
 
-        matriz2 = [matriz_descolocada[j:(j + columnas)] for j in range(0, len(matriz_descolocada), columnas)]
+        matriz2 = [matriz_descolocada[j:(j + columnas)]for j in range(0, len(matriz_descolocada), columnas)]
     return matriz2
 
 def printMatriz_2(matriz):
@@ -33,6 +32,4 @@ columnas = int(input("Dime columnas: "))
 
 printMatriz_1(crearMatriz_1(filas, columnas))
 print("---------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-printMatriz_2(crearMatriz_2(filas, columnas))
-
-    
+printMatriz_2(crearMatriz_2(filas, columnas))    
