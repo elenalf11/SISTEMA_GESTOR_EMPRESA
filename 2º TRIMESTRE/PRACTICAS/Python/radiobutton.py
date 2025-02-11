@@ -11,3 +11,5 @@ radio1 = tk.Radiobutton(ventana, text="Opción 1", variable=radio_var, value="Op
 radio2 = tk.Radiobutton(ventana, text="Opción 2", variable=radio_var, value="Opción 2", command=mostrar_opcion)
 radio1.pack()
 radio2.pack()
+
+ventana.mainloop()
